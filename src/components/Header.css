@@ -1,0 +1,22 @@
+.headerContainer {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.headerItems {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 2rem;
+  color: white;
+}
+
+.headerLeft {
+  display: flex;
+}
+
+.headerRight {
+  display: flex;
+  gap: 1rem;
+}
