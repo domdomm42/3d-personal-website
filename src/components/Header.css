@@ -2,16 +2,11 @@
   position: absolute;
   display: flex;
   width: 100%;
-  margin: 0 auto;
+  padding: 2em;
   z-index: 999;
-}
-
-.headerItems {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  margin: 2rem;
   color: white;
+  justify-content: space-between;
+  font-size: 1.5em;
 }
 
 .headerLeft {
@@ -20,5 +15,5 @@
 
 .headerRight {
   display: flex;
-  gap: 1rem;
+  gap: 2em;
 }
