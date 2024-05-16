@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
-import "./LoadupMessage.css";
 
 export default function LoadupMessage() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
     let loadupMessage = "";
-    const str = "Welcome to my website!";
+    const str = "Hello There!";
     let index = 0;
 
     const intervalId = setInterval(() => {
@@ -16,14 +15,14 @@ export default function LoadupMessage() {
       if (index === str.length) {
         clearInterval(intervalId);
       }
-    }, 100);
+    }, 130);
 
     return () => clearInterval(intervalId);
   }, []);
 
   return (
-    <>
-      <div className="loadupMessage">{message}</div>
-    </>
+    <div className="loadupMessage">
+      <h1>{message}</h1>
+    </div>
   );
 }

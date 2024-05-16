@@ -4,53 +4,93 @@ html {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: black;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.headerContainer {
+  position: absolute;
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  padding: 2em;
+  color: white;
+  justify-content: space-between;
+  font-size: 1em;
+  z-index: 999;
+}
+
+.headerLeft {
+  display: flex;
+}
+
+.headerRight {
+  display: flex;
+  gap: 2em;
+}
+
+.loadupMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 6rem;
+  position: absolute;
+  top: 2.5em;
+  margin-top: 0;
 }
 
 .homePageContainer {
   height: 100vh;
   width: 100vw;
-}
-
-.contentContainer {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  overflow: auto;
-  align-items: center;
-}
-
-.Spline {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
 }
 
 .animatedBackground {
-  position: relative;
-}
-
-.robotAndMessageContainer {
-  width: 75%;
+  height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: row;
-}
-
-.robot_div {
-  display: flex;
-
-  justify-content: flex-end;
-}
-
-.homePageBio {
-  display: flex;
-  flex: 1;
-  color: white;
   align-items: center;
   justify-content: center;
+  /* scroll-snap-align: start; */
+  flex-direction: column;
+}
+
+.landingPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  position: relative; /* Ensure correct positioning */
+}
+
+.aboutMeAndProjects {
+  height: 100vh;
+  width: 100%;
+  background-color: #010422;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.aboutMeSection {
+  display: flex;
+  width: 70%;
+  gap: 10em;
+}
+
+.myImage img {
+  border-radius: 5%;
+  display: flex;
+  flex-grow: 2;
+}
+
+.aboutMe {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
 }
