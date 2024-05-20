@@ -2,7 +2,7 @@ export default function Header() {
   return (
     <div className="headerContainer">
       <div className="headerLeft">
-        <div className="domLogo">OUDOM LIM</div>
+        <span className="nameGradient">LIM OUDOM</span>
       </div>
 
       <div className="headerRight">

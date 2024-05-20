@@ -21,7 +21,7 @@ export default function HomePage() {
     },
     {
       text: "Oudom!",
-      className: "text-[#2f7abf] dark:text-[#2f7abf]",
+      className: "text-[#59b5ad] dark:text-[#59b5ad]",
     },
   ];
   return (
