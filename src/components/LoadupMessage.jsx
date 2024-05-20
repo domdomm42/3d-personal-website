@@ -5,7 +5,7 @@ export default function LoadupMessage() {
 
   useEffect(() => {
     let loadupMessage = "";
-    const str = "Hello There!";
+    const str = "Welcome to my website!";
     let index = 0;
 
     const intervalId = setInterval(() => {
@@ -20,9 +20,5 @@ export default function LoadupMessage() {
     return () => clearInterval(intervalId);
   }, []);
 
-  return (
-    <div className="loadupMessage">
-      <h1>{message}</h1>
-    </div>
-  );
+  return <h1>{message}</h1>;
 }

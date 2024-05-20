@@ -39,6 +39,15 @@ html {
   margin-top: 0;
 }
 
+.WavyBackground {
+  width: 100vw;
+}
+
+.typeWritter {
+  position: relative;
+  /* bottom: 3em; */
+}
+
 .homePageContainer {
   height: 100vh;
   width: 100vw;
@@ -69,7 +78,7 @@ html {
 .aboutMeAndProjects {
   height: 100vh;
   width: 100%;
-  background-color: #010422;
+  background-color: rgb(17, 19, 22);
   color: white;
   display: flex;
   flex-direction: column;
@@ -93,4 +102,13 @@ html {
   display: flex;
   flex-grow: 1;
   align-items: center;
+}
+
+.project {
+  display: flex;
+}
+
+.projectDiv {
+  display: flex;
+  gap: 2px;
 }
