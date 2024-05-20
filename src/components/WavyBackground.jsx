@@ -9,7 +9,7 @@ const WavyBackground = ({
   className,
   containerClassName,
   colors,
-  waveWidth,
+  waveWidth = 67,
   backgroundFill,
   blur = 10,
   speed = "fast",
@@ -47,14 +47,11 @@ const WavyBackground = ({
   };
 
   const waveColors = colors ?? [
-    "#2f7abf",
-    "#115e8d",
-    "#59b5ad",
-    "#074562",
-    "#041e21",
-    "#147862",
-    "#074d42",
-    "#888cdb",
+    "#38bdf8",
+    "#818cf8",
+    "#c084fc",
+    "#db24b4",
+    "#22d3ee",
   ];
 
   const drawWave = (n) => {
@@ -77,6 +74,7 @@ const WavyBackground = ({
     ctx.fillStyle = backgroundFill || "black";
     ctx.globalAlpha = waveOpacity || 0.5;
     ctx.fillRect(0, 0, w, h);
+
     drawWave(5);
     animationId = requestAnimationFrame(render);
   };

@@ -1,11 +1,16 @@
+import EmblaCarousel from "../components/EmblaCarousel";
+import "../css/base.css";
+import "../css/embla.css";
+
 export default function Projects() {
+  const OPTIONS = { loop: true };
+  const SLIDE_COUNT = 5;
+  const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
   return (
     <div className="projects">
-      <h1>PROJECTS</h1>
       <div className="projectDiv">
-        <div className="item1">ITEM 1</div>
-        <div className="item2">ITEM 2</div>
-        <div className="item3">ITEM 3</div>
+        <div className="sectionTitle">Projects</div>
+        <EmblaCarousel slides={SLIDES} options={OPTIONS} />
       </div>
     </div>
   );

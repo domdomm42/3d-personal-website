@@ -21,18 +21,16 @@ export default function HomePage() {
     },
     {
       text: "Oudom!",
-      className: "text-[#59b5ad] dark:text-[#59b5ad]",
+      className: "nameText",
     },
   ];
+
   return (
     <>
       <Header />
       <div className="homePageContainer">
         <div className="landingPage">
-          <WavyBackground
-            backgroundFill="rgb(17, 19, 22)"
-            className="max-w-4xl mx-auto pb-40"
-          >
+          <WavyBackground className="max-w-4xl mx-auto pb-40">
             <TypewriterEffect words={words} className="typeWritter" />
           </WavyBackground>
         </div>

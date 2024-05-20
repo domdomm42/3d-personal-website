@@ -4,7 +4,7 @@ html {
   width: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+
   font-family: Arial, sans-serif;
 }
 
@@ -36,6 +36,7 @@ html {
   height: 100vh;
   width: 100vw;
   overflow-y: auto;
+  overflow-x: hidden;
   scroll-snap-type: y mandatory;
 }
 
@@ -45,14 +46,14 @@ html {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 100%;
-  position: relative; /* Ensure correct positioning */
+  width: 100vw;
+  position: relative;
 }
 
 .aboutMeAndProjects {
   height: 100vh;
   width: 100vw;
-  background-color: rgb(17, 19, 22);
+  background-color: black;
   color: white;
   display: flex;
   flex-direction: column;
@@ -74,23 +75,30 @@ html {
 
 .aboutMe {
   display: flex;
+  flex-direction: column;
   flex-grow: 1;
-  align-items: center;
+  /* align-items: center; */
 }
 
-.project {
-  display: flex;
+.projects {
+  width: 70%;
 }
 
-.projectDiv {
-  display: flex;
-  gap: 2px;
+.sectionTitle {
+  font-size: 3em;
+  background: -webkit-linear-gradient(#50a2ef, #59b5ad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nameText {
+  background: -webkit-linear-gradient(#50a2ef, #59b5ad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .nameGradient {
-  font-size: 1em;
   font-weight: 600;
-
   background: -webkit-linear-gradient(#2f7abf, #59b5ad);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
