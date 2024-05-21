@@ -24,9 +24,26 @@ const EmblaCarousel = (props) => {
     <section className="embla">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {slides.map((index) => (
+          {slides.map((slide, index) => (
             <div className="embla__slide" key={index}>
-              <div className="embla__slide__number">{index + 1}</div>
+              <div className="slideContent">
+                <a href={slide.link}>
+                  <img
+                    src={slide.imageUrl}
+                    alt={slide.title}
+                    className="slideImage"
+                  />
+                </a>
+                <div className="slideText">
+                  <h3>{slide.title}</h3>
+                  <p>{slide.description}</p>
+                  <ul className="technologies">
+                    {slide.technologies.map((tech, techIndex) => (
+                      <li key={techIndex}>{tech}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
             </div>
           ))}
         </div>

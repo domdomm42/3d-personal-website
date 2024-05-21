@@ -103,3 +103,78 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.embla {
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__viewport {
+  width: 100%;
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+  height: 100%;
+}
+
+.embla__slide {
+  position: relative;
+  min-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.slideContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  text-align: center;
+  height: 100%;
+}
+
+.slideImage {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.slideText {
+  width: 100%;
+  flex-grow: 1; /* Ensure text container grows to fill remaining space */
+}
+
+.slideText h3 {
+  margin: 10px 0;
+}
+
+.slideText p {
+  color: #666;
+}
+
+.technologies {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.technologies li {
+  margin: 5px;
+  padding: 5px 10px;
+  background: -webkit-linear-gradient(#2f7abf, #59b5ad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-radius: 5px;
+}
