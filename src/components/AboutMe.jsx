@@ -8,6 +8,9 @@ export default function AboutMe() {
         Cybersecurity. Beyond tech, I'm into perfecting my craft through BJJ,
         Muay Thai, Boxing, and weightlifting. I find that keeping active helps
         me not only physically but also improves my mood and mental clarity.
+        <p>
+          <b>P.S. Don't mind robo, he's trying his best 🥺</b>
+        </p>
       </div>
     </div>
   );
