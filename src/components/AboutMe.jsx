@@ -1,6 +1,6 @@
 export default function AboutMe() {
   return (
-    <div className="aboutMe">
+    <div className="aboutMe" id="aboutMeId">
       <div className="sectionTitle">About me</div>
       <div className="aboutMeText">
         I am a recent UNSW graduate and a lover of learning and technology. I've

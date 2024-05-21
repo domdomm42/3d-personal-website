@@ -29,8 +29,11 @@ export default function HomePage() {
     <>
       <Header />
       <div className="homePageContainer">
-        <div className="landingPage">
-          <WavyBackground className="max-w-4xl mx-auto pb-40">
+        <div className="landingPage" id="initialPageSection">
+          <WavyBackground
+            className="max-w-4xl mx-auto pb-40"
+            id="initialPageSection"
+          >
             <TypewriterEffect words={words} className="typeWritter" />
           </WavyBackground>
         </div>

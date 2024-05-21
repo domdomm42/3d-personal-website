@@ -12,6 +12,13 @@ export default function AboutMeAndProjects() {
         </div>
       </div>
       <Projects />
+
+      <a
+        href="https://github.com/domdomm42?tab=repositories"
+        className="githubLink"
+      >
+        More Projects Here
+      </a>
     </div>
   );
 }
