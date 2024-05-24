@@ -20,7 +20,7 @@ const PROJECTS = [
   },
   {
     title: "GeoBuddies",
-    description: "A free-to-play GeoGuessr clone!",
+    description: "A free-to-play GeoGuessr clone! Written in React.",
     imageUrl: "geoBuddies.png",
     technologies: [
       "JavaScript",
@@ -36,14 +36,14 @@ const PROJECTS = [
   },
   {
     title: "AirBrb",
-    description: "A short-term rental service.",
+    description: "An Airbnb clone utilizing React Router and SPA.",
     imageUrl: "airbrb.png",
     technologies: ["JavaScript", "React", "Cypress", "MaterialUI"],
     link: "https://github.com/domdomm42/airbrb",
   },
   {
     title: "Retro Signup Page",
-    description: "Signup page component",
+    description: "Signup page component written in HTML/CSS/JavaScript.",
     imageUrl: "signupPage.png",
     technologies: ["JavaScript", "CSS", "HTML"],
     link: "https://domdomm42.github.io/sign-up-design/",
